@@ -1,0 +1,40 @@
+[alias]
+	co = checkout
+	cob = checkout -b
+        ci = commit
+        cm = commit -am
+        br = branch
+	st = status
+
+	# Update global config
+	ec = config --global -e
+	
+	# Rebase and remove deleted remote branches
+	up = git pull --rebase --prune
+
+	# Short logs with colors
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+
+	# Long logs with colors
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+
+	# Logs with no colors
+	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+
+	# Logs with time
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+	# Logs by relative time
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	
+	# Commits for specific file
+	fl = log -u
+	
+	# Log as graph
+	logtree = log --graph --oneline --decorate --all
+
+	# Remove merged branches
+	rmb = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+[user]
+	name = Conor Dawson
+	email = conor.dawson@dailyburn.com
