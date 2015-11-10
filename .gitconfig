@@ -35,3 +35,6 @@
 
 	# Remove merged branches
 	rmb = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+[push]
+        default = current
+
