@@ -35,6 +35,3 @@
 
 	# Remove merged branches
 	rmb = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
-[user]
-	name = Conor Dawson
-	email = conor.dawson@dailyburn.com
