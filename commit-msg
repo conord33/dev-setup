@@ -20,5 +20,6 @@ if [ -n "$WORDS" ]; then
 	echo "$(tput bold)$(tput setaf 1)Possible spelling errors found in commit message:$(tput sgr0)" >&2
 	echo ""
 	grep -v '^#' "$1" | sed -e 's/^/   /' | egrep -w --color "${WORDS}\ " >&2
+	echo ""
 fi
 ### END-SPELL-CHECK
