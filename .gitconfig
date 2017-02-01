@@ -6,6 +6,9 @@
         br = branch
 	st = status
 
+	# Add with patch line by line
+	ap = add -p
+
 	# Update global config
 	ec = config --global -e
 	
@@ -38,3 +41,5 @@
 [push]
         default = current
 
+[init]
+	templatedir = ~/.git_template
