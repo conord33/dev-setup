@@ -39,7 +39,8 @@
 	# Remove merged branches
 	rmb = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 [push]
-        default = current
-
+        default = simple
+[branch]
+	autosetuprebase = always
 [init]
 	templatedir = ~/.git_template
