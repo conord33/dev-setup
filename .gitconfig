@@ -5,6 +5,11 @@
         cm = commit -am
         br = branch
 	st = status
+        fu = commit --fixup
+        rbi = rebase -i --autosquash
+
+        # Un stage the last commit
+        uc = reset HEAD^
 
 	# Add with patch line by line
 	ap = add -p
